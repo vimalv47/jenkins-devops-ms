@@ -17,5 +17,13 @@ pipeline {
 			}
 	}
 	}
+	post{
+		always {
+			echo "The job completed with"
+		}
+		success{echo "success"}
+		failure {echo "failure"}
+		
+	}
 	
 }
